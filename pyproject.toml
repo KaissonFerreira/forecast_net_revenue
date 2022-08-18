@@ -8,6 +8,7 @@ authors = ["KaissonFerreira <kaysson_17@hotmail.com>"]
 python = "^3.9"
 sklearn = "^0.0"
 seaborn = "^0.11.2"
+statsmodels = "^0.13.2"
 
 
 [tool.poetry.dev-dependencies]

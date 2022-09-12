@@ -1138,10 +1138,29 @@ category = "dev"
 optional = false
 python-versions = "*"
 
+[[package]]
+name = "xgboost"
+version = "1.6.2"
+description = "XGBoost Python Package"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+numpy = "*"
+scipy = "*"
+
+[package.extras]
+dask = ["dask", "pandas", "distributed"]
+datatable = ["datatable"]
+pandas = ["pandas"]
+plotting = ["graphviz", "matplotlib"]
+scikit-learn = ["scikit-learn"]
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "4d62de33234196eba6e67894ecedb805b0e4768d6425df3d90710d3ff3f9d670"
+content-hash = "5a5a29c8b76d6bfb57579919af72a193f62677c940ff4fb75850c384be0013ea"
 
 [metadata.files]
 appnope = [
@@ -1468,3 +1487,4 @@ webencodings = [
     {file = "webencodings-0.5.1-py2.py3-none-any.whl", hash = "sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"},
     {file = "webencodings-0.5.1.tar.gz", hash = "sha256:b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923"},
 ]
+xgboost = []
